@@ -1,0 +1,12 @@
+public class SyntaxStrings {
+	public static void main(String[] args) {
+		String aHealthySnack   = new String("apples");
+		String myFavoriteSnack = new String("apples");
+		if (aHealthySnack == myFavoriteSnack) {
+			//will not enter this block, because String uses equalTo function, not == comparator
+			System.out.println("Your snack is healthy.");
+		} else {
+			System.out.println("Choose a healthier snack next time.");
+		}
+	}
+}
