@@ -1,0 +1,14 @@
+class Solution {
+    public int change(int amount, int[] coins) {
+        int a[]= new int[amount+1];
+        a[0]=1;
+        for(int coin: coins){
+            for(int i=coin;i<=amount;i++)
+            {
+                a[i]+=a[i-coin];
+            }
+        }
+        return a[amount];
+        
+    }
+}
